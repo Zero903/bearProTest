@@ -19,3 +19,91 @@ h6 {
 p {
     font-family: '微軟正黑體';
 }
+
+.progress-table {
+    background: #f9f9ff;
+    padding: 15px 0px 30px 0px;
+    min-width: 900px;
+}
+
+.progress-table .category {
+    width: 18%;
+}
+
+.progress-table .spec {
+    width: 58%;
+}
+
+.progress-table .quantity {
+    width: 6%;
+}
+
+.progress-table .price {
+    width: 9%;
+}
+
+.progress-table .subtotal {
+    width: 9%;
+    padding-right: 10px;
+}
+
+.progress-table .table-head {
+    display: flex;
+}
+
+.progress-table .table-head .category,
+.spec,
+.quantity,
+.price,
+.subtotal {
+    /* color: $title-color; */
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+.progress-table .table-row {
+    padding: 15px 0;
+    border-top: 1px solid #edf3fd;
+    display: flex;
+}
+
+.progress-table .table-row .category,
+.spec,
+.quantity,
+.price,
+.subtotal {
+    display: flex;
+    align-items: center;
+}
+
+.progress-table .table-row .quantity,
+.price,
+.subtotal {
+    padding: 15px;
+    text-align: right;
+}
+
+/* 漸變 color1 - color2 - color1 */
+hr .style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.form-input {
+    height: 40px;
+    width: 86%;
+    margin-bottom: 30px;
+    border: solid 1px #E2E2E2;
+}
+
+div .list-group {
+    width: 600px;
+    height: 500px;
+    border: 1px dotted black;
+    overflow: scroll;
+    overflow-x: hidden;
+}
