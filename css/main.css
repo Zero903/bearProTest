@@ -31,19 +31,19 @@ p {
 }
 
 .progress-table .spec {
-    width: 58%;
-}
-
-.progress-table .quantity {
-    width: 6%;
+    width: 56%;
 }
 
 .progress-table .price {
-    width: 9%;
+    width: 8%;
+}
+
+.progress-table .quantity {
+    width: 10%;
 }
 
 .progress-table .subtotal {
-    width: 9%;
+    width: 8%;
     padding-right: 10px;
 }
 
@@ -60,6 +60,8 @@ p {
     line-height: 40px;
     text-transform: uppercase;
     font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -81,7 +83,7 @@ p {
 .progress-table .table-row .quantity,
 .price,
 .subtotal {
-    padding: 15px;
+    padding: 10px;
     text-align: right;
 }
 
@@ -106,4 +108,45 @@ div .list-group {
     border: 1px dotted black;
     overflow: scroll;
     overflow-x: hidden;
+}
+
+.genric-btn.small.quantity {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.input-quantity {
+    width: 30px;
+}
+
+
+.cart-chkbox {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-delete {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-table.confirm .spec {
+    width: 70%;
+}
+
+.progress-table.confirm .price {
+    width: 10%;
+}
+
+.progress-table.confirm .quantity {
+    width: 11%;
+}
+
+.progress-table.confirm .subtotal {
+    width: 9%;
+    padding-right: 10px;
 }
