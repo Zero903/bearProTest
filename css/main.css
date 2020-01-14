@@ -119,6 +119,11 @@ div .list-group {
     width: 30px;
 }
 
+.HVCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .cart-chkbox {
     width: 8%;
@@ -132,6 +137,10 @@ div .list-group {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.progress-table.confirm {
+    width: 100%;
 }
 
 .progress-table.confirm .spec {
@@ -149,4 +158,11 @@ div .list-group {
 .progress-table.confirm .subtotal {
     width: 9%;
     padding-right: 10px;
+}
+
+.confirm-input {
+    /* display: flex; */
+    width: max-content;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
