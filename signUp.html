@@ -148,77 +148,37 @@
 
             <div class="row">
                 <div class="col-sm-2">
-                    請輸入名稱：
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <input class="form-control valid" name="username" id="username" type="username"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Name'"
-                            placeholder="Name" value="">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
                     請輸入電話號碼：
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <div class="form-group">
                         <input class="form-control valid" name="phone" id="phone" type="phone"
                             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Phone number'"
                             placeholder="Phone" value="">
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    請輸入電子郵件：
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <input class="form-control valid" name="email" id="email" type="email"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email address'"
-                            placeholder="Email">
+                <div class="col-sm-2 ">
+                    <div id="validPhone">
+                        <a href="#" onclick="inputValidCode()" class="genric-btn primary">寄送驗證碼</a>
+                    </div>
+                    <div id="validPhoneSuccess" style="display: none;">
+                        電話驗證成功
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-2">
-                    請輸入密碼：
-                </div>
-                <div class="col-sm-6">
+                <!-- <div class="col-sm-2">
                     <div class="form-group">
-                        <input class="form-control valid" name="" id="passwordNew" type="password"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'new password'"
-                            placeholder="new password" value="">
+                        <input class="form-control valid" name="phoneValidCode" id="phoneValidCode"
+                            type="phoneValidCode" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter Phone Valid Code'" placeholder="Phone Valid Code"
+                            value="">
                     </div>
-                </div>
-                <div class="col-sm-4">
-
-                </div>
+                </div> -->
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    請確認密碼：
+                    請輸入圖型驗證碼：
                 </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <input class="form-control valid" name="" id="passwordNew2" type="password"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'new password again'"
-                            placeholder="new password again" value="">
-                    </div>
-                </div>
-                <div class="col-sm-4">
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-2">
-                    請輸入驗證碼：
-                </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="form-group">
                         <input class="form-control valid" name="" id="validCode"" type=" password"
                             onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入右圖的數字'"
@@ -232,42 +192,7 @@
 
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    請輸入社群、網購平台ID，方便我們聯絡、核對，謝謝！
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <input class="form-control valid" name="fb" id="fb" type="fb" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter your FB'" placeholder="FB" value="">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <input class="form-control valid" name="line" id="line" type="line"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Line'"
-                            placeholder="Line" value="">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <input class="form-control valid" name="shopee" id="shopee" type="shopee"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Shopee'"
-                            placeholder="Shopee" value="">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <input class="form-control valid" name="ruten" id="ruten" type="ruten"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Ruten'"
-                            placeholder="Ruten" value="">
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     </div>
@@ -287,8 +212,8 @@
                 <div class="Query_border">
                     <div class="row align-items-center justify-content-center">
                         <div class="book_btn d-none d-lg-block">
-                            <a href="index.html" class="genric-btn info circle"><span
-                                    style='font-size: x-large;'>註冊</span></a>
+                            <a href="signUp2.html" class="genric-btn info circle"><span
+                                    style='font-size: x-large;'>下一步</span></a>
                         </div>
                     </div>
                 </div>
@@ -371,6 +296,46 @@
 
     <script src="js/main.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script>
+        var inputValue;
+
+        function inputValidCode() {
+            Swal.fire({
+                title: '請輸入簡訊中的驗證碼',
+                icon: 'question',
+                input: 'text',
+                inputValue: inputValue,
+                // showConfirmButton: false,
+                // timer: 3000
+                onAfterClose: function () {
+                    // alert(inputValue);
+                    vaildPhoneCode(inputValue);
+                },
+            });
+        }
+
+        function vaildPhoneCode(inputValue) {
+            // alert(inputValue);
+            //valid inputValue
+            // if (inputValue != "") {
+            phoneValidSuccess();
+            // }
+        }
+
+        function phoneValidSuccess() {
+            Swal.fire({
+                icon: 'success',
+                title: '電話驗證成功！',
+                onAfterClose: function () {
+                    $('#validPhone').hide();
+                    $('#validPhoneSuccess').show();
+                }
+            });
+        }
+
+    </script>
 </body>
 
 </html>
