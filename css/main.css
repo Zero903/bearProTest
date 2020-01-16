@@ -10,14 +10,14 @@ h4,
 h5,
 h6 {
     /* font-family: 'Noto Sans TC', sans-serif; */
-    font-family: '微軟正黑體';
+    font-family: "微軟正黑體";
     /* font-family: '微軟正黑體', 'Lora', sans-serif; */
     /* font-family: MicrosoftYaHei, '宋體', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; */
 }
 
 .slider_area .single_slider .slider_text h3,
 p {
-    font-family: '微軟正黑體';
+    font-family: "微軟正黑體";
 }
 
 .progress-table {
@@ -56,14 +56,12 @@ p {
 .quantity,
 .price,
 .subtotal {
-    /* color: $title-color; */
     line-height: 40px;
     text-transform: uppercase;
     font-weight: 500;
     display: flex;
     align-items: center;
 }
-
 
 .progress-table .table-row {
     padding: 15px 0;
@@ -99,7 +97,7 @@ hr .style-one {
     height: 40px;
     width: 86%;
     margin-bottom: 30px;
-    border: solid 1px #E2E2E2;
+    border: solid 1px #e2e2e2;
 }
 
 div .list-group {
@@ -165,4 +163,49 @@ div .list-group {
     width: max-content;
     /* align-items: center; */
     /* justify-content: center; */
+}
+
+.progress-table.orderList {
+    width: 100%;
+}
+
+.progress-table.orderList .table-head td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-table.orderList .orderIDDetail {
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-table.orderList .orderDatetime {
+    width: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-table.orderList .productName {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.progress-table.orderList .totalQuantityPrice {
+    width: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-table.orderList .orderStatus {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
