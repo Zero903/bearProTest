@@ -153,7 +153,7 @@
     <!-- order data start -->
 
     <!-- product start -->
-    <div class="container box_1170">
+    <div class="container ">
         <div class="section-top-border">
             <h3 class="mb-30">訂單明細</h3>
 
@@ -249,12 +249,20 @@
             <div class="col-xl-3 col-md-3">
             </div>
             <div class="col-xl-3 col-md-3">
+                <div class="Query_border">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="book_btn d-none d-lg-block">
+                            <a href="javascript:void(0);" onclick="orderSent()" class="genric-btn info circle"><span
+                                    style='font-size: x-large;'>送出訂單</span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-xl-3 col-md-3">
                 <div class="Query_border">
                     <div class="row align-items-center justify-content-center">
                         <div class="book_btn d-none d-lg-block">
-                            <a href="#" onclick="history.back()" class="genric-btn info circle"><span
+                            <a href="javascript:void(0);" onclick="history.back();" class="genric-btn info circle"><span
                                     style='font-size: x-large;'>回上一頁</span></a>
                         </div>
                     </div>
@@ -336,7 +344,19 @@
     <script src="../js/mail-script.js"></script>
 
     <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
+    <script>
+        function orderSent() {
+            Swal.fire({
+                icon: 'success',
+                title: '訂單已送出！ 將回到上一頁',
+                // showConfirmButton: false,
+                // timer: 3000
+                onAfterClose: function () { history.back(); }
+            });
+        }
+    </script>
 </body>
 
 </html>
